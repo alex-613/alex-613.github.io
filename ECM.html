@@ -1,12 +1,8 @@
 <!DOCTYPE HTML>
-<!--
-	Phantom by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<title>Generic - Phantom by HTML5 UP</title>
+		<title>Alex's Page</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +18,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+									<span class="symbol"><img src="images/robotlogo.png" alt="" /></span><span class="title">Projects</span>
 								</a>
 
 							<!-- Nav -->
@@ -40,10 +36,14 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="LiTT.html">Neural net for LiTT</a></li>
+							<li><a href="OSMR.html">OSMR</a></li>
+							<li><a href="AR for malleable robot.html">AR for malleable robot</a></li>
+							<li><a href="Signature robot.html">Signature robot</a></li>
+							<li><a href="ECM.html">UAV</a></li>
+							<li><a href="Simulink.html">Simulink for ME2</a></li>
+							<li><a href="Penguin.html">The Penguin</a></li>
+							<!-- <li><a href="Uniwheel.html">Uniwheel</a></li> -->
 						</ul>
 					</nav>
 
@@ -51,10 +51,13 @@
 					<div id="main">
 						<div class="inner">
 							<h1>UAV for bomb disposal</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
+							
+							<p>Programming and designing systems with mechatronics will inevitably require the usage of simple microcontrollers (perhaps in cascade), in order to achieve a goal. Under real world applications, engineers are unlikely to have access to a wrapped and "easy to use" interface like the one found in Arduinos and Raspberry pi, but rather something that is much more fundamental and spatially compact, such as a PIC18F4331 chip. Hence, as part of my path to becoming a roboticist and a mechatronics engineer, I found it imperative to understand such systems and be able to use them efficiently. This was my motivation for selecting the Embedded C for Microcontrollers course as part of my third year of studies.</p>
+							<p>Throughout this challenging course, I worked with my partner to solve practical problems encountered as engineers. Not only was I able to get hands on experience with a large selection of sensors like IR sensor, RFID, L239N and many more, but I was also introduced to bit registers, microcontroller architecture, serial communication and memory optimization, which are concepts that are fundamental to software - hardware integration. </p>
+							<span class="image"><img src="images/ECM1.jpg" class="small" alt="" /></span>
+							<p>For the course's final project, I worked in a team of two and built an autonomous and portable UAV that is able to scan and detect an IR irradiant source, follow the signal, and retrieve RFID information from the source using serial communication and a reader. This project was designed to simulate a scenario where a suspicious device (such as an explosive) with a remote arm and disarm ability was deployed, and a robot solution needs to be developed in order to safely disable it. The following flowchart illustrates the algorithm that was implemented into the "path finder": </p>
+							<span class="image"><img src="images/ECMFlowChart.jpg" class="small" alt="" /></span>
+							<p>In essence, the robot begins by spinning on its spot and proceeds to detect any incomming signals. Upon signal detection, the robot records the signal, then normalizes it in order to eliminate any noise caused by IR signals reflecting off surfaces. Thereafter, the robot continues to check for the IR signal from the beacon, then decides for its best course of action, depending on the relative signals received on its two IR sensors. Once the robot reaches the target, it proceeds to scan the RFID tag at the source, and begins a backward traversal process, where it will eventually reach the same position as before it set off for the journey. </p>
 						</div>
 					</div>
 
@@ -83,18 +86,13 @@
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+
+									<li><a href="https://github.com/alex-613" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="alexranne@hotmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
 								</ul>
 							</section>
 							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Alex Ranne. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</footer>
