@@ -36,11 +36,11 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="LiTT.html">Neural net for LiTT</a></li>
+							<li><a href="LiTT.html">Monte Carlo Simulations for LiTT</a></li>
 							<li><a href="OSMR.html">OSMR</a></li>
 							<li><a href="AR for malleable robot.html">AR for malleable robot</a></li>
 							<li><a href="Signature robot.html">Signature robot</a></li>
-							<li><a href="ECM.html">UAV</a></li>
+							<li><a href="ECM.html">Autonomous vehicle</a></li>
 							<li><a href="Simulink.html">Simulink for ME2</a></li>
 							<li><a href="Penguin.html">The Penguin</a></li>
 							<!-- <li><a href="Uniwheel.html">Uniwheel</a></li> -->
@@ -50,13 +50,15 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<h1>Neural Network for predicting ablation path in LiTT</h1>
+							<h1>Monte Carlo Simulation for predicting ablation path in LiTT</h1>
 							
 							<p>Minimally invasive surgery (MIS) is a popular topic of discussion in the past decade, as it brings about benefits such as reduced recovery times, reduced risk of infection, reduced pain for the patient and much more. However, MIS also reduces the surgeon’s vision and makes it difficult for them to gain a holistic view of the target anatomy. Furthermore, medical doctor’s fatigue due to repetitive operations also reduces the quality of the surgery, especially if it needs to be conducted over a long period of time. Hence, recent developments in MIS have been centered around making operations more fluid, more autonomous and computer assisted (via the use of robotics and Augmented Reality), which harnesses the power of control systems or otherwise to optimize the process. </p>
 							<p>One of the factors in achieving a successful MIS is path planning, where the path taken by a surgical instrument (mounted on a robot or otherwise) to reach its target position is determine prior to surgery(planning), and during the surgery, the algorithm modifies the path slightly to account for unexpected changes in the target anatomy (navigation).</p>
-							<p>In this project, I had the honor of working with PhD students within the Mechatronics in medicine lab (MiM) at Imperial, to explore their path planing algorithm and software. One of the flagship projects that MiM is running is called EDEN 2020, which is a steerable soft bevel tip needle that is dedicated towards performing neurosurgeries deep within the patient's body, such as in traditionally difficult to reach positions in the brain. As a result, this system is currently being trialed in laser interstitla thermal therapies (LITT), which is essence is a surgical procedure that used laser to heat up critical tissues in the brain, in an attempt to treat mesial temporal lobe epilepsy, whilst avoiding open-surgeries.  </p>
-							<span class="image"><img src="images/PBN1.JPG" class = "small" alt="" /></span>
-							<p>My task was to program an artificial neural network which takes in an pre-operative and post-operative MRI images from the patient along with the programed parameters used to generate the planned trajectories, and use an aritificial neural network to decide on the optimal trajectory which will minimize laser tissue damage on the patient. This project has just begun hence more information is coming in due course!</p>
+							<span class="image"><img src="images/PBN1.JPG" class = "verysmall" alt="" /></span>
+							<p>In this project, I had the honor of working with PhD students within the <a href="https://www.imperial.ac.uk/mechatronics-in-medicine">Mechatronics in medicine lab (MiM)</a> at Imperial, to explore their path planing algorithm and software. One of the flagship projects that MiM is running is called <a href="https://www.eden2020.eu/">EDEN 2020</a> , which is a steerable soft bevel tip needle that is dedicated towards performing neurosurgeries deep within the patient's body, such as in traditionally difficult to reach positions in the brain. As a result, this system is currently being trialed in laser interstitla thermal therapies (LITT), which is essence is a surgical procedure that used laser to heat up critical tissues in the brain, in an attempt to treat mesial temporal lobe epilepsy, whilst avoiding open-surgeries.  </p>
+							
+							<p>My task was to develop an advanced tissue model of the brain, labelled with optical properties such as absorption and scattering coefficients. With this model, the propogation of laser energy within the brain can be predicted using a Monte Carlo simulation, that in essence solves a ratiative transport equation and outputs an energy map. Using this information, the existing path planner in the EDEN 2020 can be improved significantly, as now the system is aware of how laser energy travels through a complex, heterogeneous tissue. </p>
+							<span class="image"><img src="images/Monte_Carlo1.JPG" class = "verysmall" alt="" /></span>
 						</div>
 					</div>
 
